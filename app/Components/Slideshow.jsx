@@ -4,41 +4,40 @@ import React from 'react';
  * @see https://v0.dev/t/j5sxssx9aCb
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { CarouselPrevious, CarouselNext, CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
-import { CardContent, Card } from "@/components/ui/card"
+// import { CarouselPrevious, CarouselNext, CarouselItem, CarouselContent, Carousel } from "@/components/ui/carousel"
+// import { CardContent, Card } from "@/components/ui/card"
+
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 import Portrait from '../../public/PortraitSquare.jpg';
 
 export default function Slideshow(Images) {
   console.log('feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',Images.src);
   return (
-    <Carousel className="w-full max-w-md relative">
-      <CarouselContent>
-        <CarouselItem className="aspect-square relative">
+    <Carousel className="w-full max-w-xs">
+    <CarouselContent>
+      {Images.from({ length: 5 }).map((_, index) => (
+        <CarouselItem key={index}>
           <div className="p-1">
             <Card>
-              <CardContent className="flex aspect-square items-center justify-center p-6 relative">
-                <img
-                  alt="Image 1"
-                  className="object-cover w-full h-full"
-                  // src={`${Images[0]}`}
-                  src={Images.src}
-                  style={{
-                    aspectRatio: "300/300",
-                    objectFit: "cover",
-                  }}
-                  width="300"
-                  height="300"
-                />
-
-                <p className="absolute bottom-0 bg-white bg-opacity-60 w-full text-center py-2">Image 1 description</p>
-                <CarouselPrevious className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white rounded-full" />
-                <CarouselNext className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full" />
+              <CardContent className="flex aspect-square items-center justify-center p-6">
+                <img src={_.src} alt="Portrait of Kail Stefanatos" />
               </CardContent>
             </Card>
           </div>
         </CarouselItem>
-      </CarouselContent>
-    </Carousel>
+      ))}
+    </CarouselContent>
+    <CarouselPrevious />
+    <CarouselNext />
+  </Carousel> 
   )
 }
 
@@ -52,4 +51,5 @@ export default function Slideshow(Images) {
 //     </CardContent>
 //   </CarouselItem>
 // ))}
+
 

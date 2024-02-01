@@ -12,7 +12,7 @@ function LandingPage() {
             <div className='flex xl:flex-row flex-col'>
 
                 <div className='flex flex-col items-center justify-center xl:w-2/3 '>
-                    <p className='p-5 text-center font-bold text-3xl'>
+                    <p className='p-5 text-center font-bold xl:text-3xl xs:text-sm'>
                         Call:
                         +61-423-900464
                         <br />
@@ -38,14 +38,14 @@ function LandingPage() {
                 <div className='flex items-center justify-center'>
                     {/* <Slideshow Images={[Portrait.src]} /> */}
                     <img
-                            src={CleaningBeforeAfter.src}
-                            style={{
-                                aspectRatio: "600/600",
-                                objectFit: "cover",
-                            }}
-                            width="600"
-                            height="600"
-                        ></img>
+                        src={CleaningBeforeAfter.src}
+                        style={{
+                            aspectRatio: "600/600",
+                            objectFit: "cover",
+                        }}
+                        width="600"
+                        height="600"
+                    ></img>
                 </div>
 
 

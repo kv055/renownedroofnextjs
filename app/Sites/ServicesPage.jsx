@@ -18,29 +18,29 @@ import { TabsTrigger, TabsList, TabsContent, Tabs } from "@/components/ui/tabs"
 
 export default function Services() {
     return (
-        <Tabs className="w-full h-auto bg-sky-100" defaultValue="tab1">
-            <TabsList className="flex justify-around bg-sky-900 text-white m-5 p-10">
-                <TabsTrigger className="py-2 px-4 rounded-md" value="tab1">
+        <Tabs className="w-full h-auto bg-sky-100">
+            <TabsList className="flex flex-col bg-sky-900 text-white m-5 p-10">
+                <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab1">
                     <span className='text-xl'>Cleaning</span>
                 </TabsTrigger>
-                <TabsTrigger className="py-2 px-4 rounded-md" value="tab2">
-                    <span className='text-xl'>re-Pointing & re-Bedding</span>
+                <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab2">
+                    <span className='text-xl'>Re-Pointing & Re-Bedding</span>
                 </TabsTrigger>
-                <TabsTrigger className="py-2 px-4 rounded-md" value="tab3">
+                <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab3">
                     <span className='text-xl'>Valley Replacement</span>
                 </TabsTrigger>
-                <TabsTrigger className="py-2 px-4 rounded-md" value="tab4">
+                <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab4">
                     <span className='text-xl'>Maintenance</span>
                 </TabsTrigger>
-                <TabsTrigger className="py-2 px-4 rounded-md" value="tab5">
+                <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab5">
                     <span className='text-xl'>Full Restorations</span>
                 </TabsTrigger>
             </TabsList>
             <div className='pt-5'>
 
-                <TabsContent className='flex p-4' value="tab1">
+                <TabsContent className='p-4' value="tab1">
                     {/* Left Section */}
-                    <div className='flex flex-row items-end w-1/2'>
+                    <div className='flex flex-col xl:flex-row items-end w-1/2'>
                         {/* <Slideshow /> */}
                         <img
                             src={CleaningBeforeAfter.src}
@@ -67,7 +67,7 @@ export default function Services() {
                     </div>
                 </TabsContent>
 
-                <TabsContent className='flex p-4' value="tab2">
+                <TabsContent className=' flex flex-col xl:flex-row p-4' value="tab2">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
                         {/* <Slideshow /> */}
@@ -90,7 +90,7 @@ export default function Services() {
                     </div>
                 </TabsContent>
 
-                <TabsContent className='flex p-4' value="tab3">
+                <TabsContent className=' flex flex-col xl:flex-row p-4' value="tab3">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
                         {/* <Slideshow /> */}
@@ -113,12 +113,12 @@ export default function Services() {
                     </div>
                 </TabsContent>
 
-                <TabsContent className='flex p-4' value="tab4">
+                <TabsContent className=' flex flex-col xl:flex-row p-4' value="tab4">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
                         {/* <Slideshow /> */}
                         <img
-                            src={FullRestorationBefore.src }
+                            src={FullRestorationBefore.src}
                             style={{
                                 aspectRatio: "300/300",
                                 objectFit: "cover",
@@ -137,12 +137,12 @@ export default function Services() {
                     </div>
                 </TabsContent>
 
-                <TabsContent className='flex p-4' value="tab5">
+                <TabsContent className=' flex flex-col xl:flex-row p-4' value="tab5">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
                         {/* <Slideshow /> */}
                         <img
-                            src={FullRestorationBefore.src }
+                            src={FullRestorationBefore.src}
                             style={{
                                 aspectRatio: "300/300",
                                 objectFit: "cover",
