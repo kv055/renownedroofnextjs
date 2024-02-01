@@ -13,14 +13,62 @@ import { Button } from "@/components/ui/button"
 export default function ContactForm() {
     const [emailChecked, setEmailChecked] = useState(false);
     const [phoneChecked, setPhoneChecked] = useState(false);
-
+    const [feedbackMessage, setFeedbackMessage] = useState('');
     const handleEmailChange = () => {
         setEmailChecked(!emailChecked);
+        console.log("Email checked:", !emailChecked);
     }
 
     const handlePhoneChange = () => {
         setPhoneChecked(!phoneChecked);
+        console.log("Phone checked:", !phoneChecked);
     }
+    const fetchEmailServer = async (userInput) => {
+        console.log(userInput);
+        try {
+            const response = await fetch("http://localhost:3000/API", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(userInput),
+            });
+
+            if (response.ok) {
+                setFeedbackMessage("Feedback submitted successfully");
+            } else {
+                const errorData = await response.json();
+                setFeedbackMessage(`Error submitting feedback: ${errorData.message}`);
+            }
+        } catch (error) {
+            setFeedbackMessage(`Error submitting feedback: ${error.message}`);
+        }
+    }
+
+    const handleSubmit = () => {
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Construct user input object
+        const userInput = {
+            firstName,
+            lastName,
+            email,
+            phone,
+            message,
+            contactPreferences: {
+                email: emailChecked,
+                phone: phoneChecked,
+            },
+        };
+
+        // Call the fetchEmailServer function with user input
+        fetchEmailServer(userInput);
+    };
+
     return (
         <div className="max-w-md mx-auto space-y-8">
             <div className="space-y-2">
@@ -84,9 +132,18 @@ export default function ContactForm() {
                         </label>
                     </div>
                 </div>
-                <Button className="opacity-50 cursor-not-allowed w-full" disabled={!emailChecked && !phoneChecked}>
+                <Button
+                    // cursor-not-allowed 
+                    className="opacity-50 w-full"
+                    disabled={!emailChecked && !phoneChecked}
+                    onClick={handleSubmit}
+                >
                     Submit
                 </Button>
+
+                {/* Display feedback message
+                {feedbackMessage && <p className="text-red-500">{feedbackMessage}</p>} */}
+
             </div>
         </div>
     )

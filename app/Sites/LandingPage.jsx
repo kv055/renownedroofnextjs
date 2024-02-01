@@ -2,6 +2,7 @@ import React from 'react';
 import Slideshow from '../Components/Slideshow';
 import ContactForm from '../Components/ContactForm';
 import Portrait from '../../public/PortraitSquare.jpg';
+import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
 // pnpm dlx shadcn-ui@latest add button
 
 function LandingPage() {
@@ -10,7 +11,7 @@ function LandingPage() {
         <>
             <div className='flex flex-row'>
 
-                <div className='flex flex-col p-5 items-center justify-center w-1/3'>
+                <div className='flex flex-col p-5 items-center justify-center w-2/3'>
                     <p className='p-5 text-center font-bold text-3xl'>
                         Call:
                         +61-423-900464
@@ -29,13 +30,22 @@ function LandingPage() {
                     </p>
                 </div>
 
-                <div className='m-5'>
+                {/* <div className='m-5'>
                     <ContactForm className=" w-1/3" />
-                </div>
+                </div> */}
 
 
-                <div className='flex items-end justify-end w-1/3'>
-                    <Slideshow Images={[Portrait.src]} />
+                <div className='flex items-center justify-center w-1/3'>
+                    {/* <Slideshow Images={[Portrait.src]} /> */}
+                    <img
+                            src={CleaningBeforeAfter.src}
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                 </div>
 
 

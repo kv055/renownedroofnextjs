@@ -9,6 +9,7 @@ import { CardContent, Card } from "@/components/ui/card"
 import Portrait from '../../public/PortraitSquare.jpg';
 
 export default function Slideshow(Images) {
+  console.log('feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',Images.src);
   return (
     <Carousel className="w-full max-w-md relative">
       <CarouselContent>
@@ -19,15 +20,16 @@ export default function Slideshow(Images) {
                 <img
                   alt="Image 1"
                   className="object-cover w-full h-full"
-                  height="300"
                   // src={`${Images[0]}`}
-                  src={Portrait.src}
+                  src={Images.src}
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
                   }}
                   width="300"
+                  height="300"
                 />
+
                 <p className="absolute bottom-0 bg-white bg-opacity-60 w-full text-center py-2">Image 1 description</p>
                 <CarouselPrevious className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-white rounded-full" />
                 <CarouselNext className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-white rounded-full" />

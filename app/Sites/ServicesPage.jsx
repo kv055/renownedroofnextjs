@@ -1,5 +1,13 @@
 import React from 'react';
 import Slideshow from '../Components/Slideshow';
+import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
+import ValleyBefore from '../../public/ServicesValleyBefore.jpeg'
+import ValleyAfter from '../../public/ServicesValleyAfter.jpeg'
+import ReBeddingRePointingBefore from '../../public/ServicesReBeddingRePointingAfter.jpeg'
+import ReBeddingRePointingAfter from '../../public/ServicesReBeddingRePointingAfter.jpeg'
+import FullRestorationBefore from '../../public/ServicesFullRestorationsBefore.jpeg'
+import FullRestorationAfter from '../../public/ServicesFullRestorationsAfter.jpeg'
+// import from '../../public/Services'
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/Pdusrw0MX1f
@@ -33,7 +41,16 @@ export default function Services() {
                 <TabsContent className='flex p-4' value="tab1">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
-                        <Slideshow />
+                        {/* <Slideshow /> */}
+                        <img
+                            src={CleaningBeforeAfter.src}
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                     </div>
 
                     {/* Right Section */}
@@ -53,7 +70,16 @@ export default function Services() {
                 <TabsContent className='flex p-4' value="tab2">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
-                        <Slideshow />
+                        {/* <Slideshow /> */}
+                        <img
+                            src={ReBeddingRePointingBefore.src}
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                     </div>
 
                     {/* Right Section */}
@@ -67,7 +93,16 @@ export default function Services() {
                 <TabsContent className='flex p-4' value="tab3">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
-                        <Slideshow />
+                        {/* <Slideshow /> */}
+                        <img
+                            src={ValleyBefore.src}
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                     </div>
 
                     {/* Right Section */}
@@ -81,7 +116,16 @@ export default function Services() {
                 <TabsContent className='flex p-4' value="tab4">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
-                        <Slideshow />
+                        {/* <Slideshow /> */}
+                        <img
+                            src={FullRestorationBefore.src }
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                     </div>
 
                     {/* Right Section */}
@@ -96,7 +140,16 @@ export default function Services() {
                 <TabsContent className='flex p-4' value="tab5">
                     {/* Left Section */}
                     <div className='flex flex-row items-end w-1/2'>
-                        <Slideshow />
+                        {/* <Slideshow /> */}
+                        <img
+                            src={FullRestorationBefore.src }
+                            style={{
+                                aspectRatio: "300/300",
+                                objectFit: "cover",
+                            }}
+                            width="300"
+                            height="300"
+                        ></img>
                     </div>
 
                     {/* Right Section */}
@@ -110,8 +163,17 @@ export default function Services() {
 
                 {/* <TabsContent className="flex items-center justify-center" value="tab2">
                     <div className="w-1/2 space-y-4">
-                        <Slideshow />
-                        <h2 className="text-xl font-bold">Your Profile</h2>
+                        // <Slideshow />
+   
+   <img
+   src={}
+                     style={{
+                    aspectRatio: "300/300",
+                    objectFit: "cover",
+                  }}
+                  width="300"
+                  height="300"
+   ></img>                     <h2 className="text-xl font-bold">Your Profile</h2>
                         <p className="text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem in feugiat.
                         </p>
@@ -119,8 +181,17 @@ export default function Services() {
                 </TabsContent>
                 <TabsContent className="flex items-center justify-center" value="tab3">
                     <div className="w-1/2 space-y-4">
-                        <Slideshow />
-                        <h2 className="text-xl font-bold">Your Messages</h2>
+                        // <Slideshow />
+   
+   <img
+   src={}
+                     style={{
+                    aspectRatio: "300/300",
+                    objectFit: "cover",
+                  }}
+                  width="300"
+                  height="300"
+   ></img>                     <h2 className="text-xl font-bold">Your Messages</h2>
                         <p className="text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem in feugiat.
                         </p>
@@ -128,8 +199,17 @@ export default function Services() {
                 </TabsContent>
                 <TabsContent className="flex items-center justify-center" value="tab4">
                     <div className="w-1/2 space-y-4">
-                        <Slideshow />
-                        <h2 className="text-xl font-bold">Your Notifications</h2>
+                        // <Slideshow />
+   
+   <img
+   src={}
+                     style={{
+                    aspectRatio: "300/300",
+                    objectFit: "cover",
+                  }}
+                  width="300"
+                  height="300"
+   ></img>                     <h2 className="text-xl font-bold">Your Notifications</h2>
                         <p className="text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem in feugiat.
                         </p>
@@ -137,8 +217,17 @@ export default function Services() {
                 </TabsContent>
                 <TabsContent className="flex items-center justify-center" value="tab5">
                     <div className="w-1/2 space-y-4">
-                        <Slideshow />
-                        <h2 className="text-xl font-bold">Your Settings</h2>
+                        // <Slideshow />
+   
+   <img
+   src={}
+                     style={{
+                    aspectRatio: "300/300",
+                    objectFit: "cover",
+                  }}
+                  width="300"
+                  height="300"
+   ></img>                     <h2 className="text-xl font-bold">Your Settings</h2>
                         <p className="text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis lorem in feugiat.
                         </p>
