@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from './Slider'
+import Header from '../../Sites/NavigationHeader'
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/Pdusrw0MX1f
@@ -8,7 +9,9 @@ import Slider from './Slider'
 export default function Cleaning() {
     return (
         <>
+        <Header></Header>
             <div className='xl:px-36 xl:py-10 md:px-2 md:py-2'>
+
                 <h3 className='text-center mb-4 items-center text-3xl bg-sky-900 text-white p-5 font-bold'>
                     Cleaning
                 </h3>
