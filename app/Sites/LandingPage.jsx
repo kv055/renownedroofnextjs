@@ -3,7 +3,6 @@ import Slideshow from '../Components/Slideshow';
 import ContactForm from '../Components/ContactForm';
 import Portrait from '../../public/PortraitSquare.jpg';
 import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
-// pnpm dlx shadcn-ui@latest add button
 
 function LandingPage() {
 
@@ -36,16 +35,7 @@ function LandingPage() {
 
 
                 <div className='flex items-center justify-center'>
-                    {/* <Slideshow Images={[Portrait.src]} /> */}
-                    <img
-                        src={CleaningBeforeAfter.src}
-                        style={{
-                            aspectRatio: "600/600",
-                            objectFit: "cover",
-                        }}
-                        width="600"
-                        height="600"
-                    ></img>
+                    <Slideshow/>
                 </div>
 
 

@@ -16,40 +16,45 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import Portrait from '../../public/PortraitSquare.jpg';
+import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
+import ValleyBefore from '../../public/ServicesValleyBefore.jpeg'
+import ValleyAfter from '../../public/ServicesValleyAfter.jpeg'
+import ReBeddingRePointingBefore from '../../public/ServicesReBeddingRePointingBefore.jpeg'
+import ReBeddingRePointingAfter from '../../public/ServicesReBeddingRePointingAfter.jpeg'
+import FullRestorationBefore from '../../public/ServicesFullRestorationsBefore.jpeg'
+import FullRestorationAfter from '../../public/ServicesFullRestorationsAfter.jpeg'
 
-export default function Slideshow(Images) {
-  console.log('feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee',Images.src);
+const images = [
+  CleaningBeforeAfter,
+  ValleyBefore,
+  ValleyAfter,
+  ReBeddingRePointingBefore,
+  ReBeddingRePointingAfter,
+  FullRestorationBefore,
+  FullRestorationAfter
+];
+
+export default function Slideshow() {
+
   return (
-    <Carousel className="w-full max-w-xs">
-    <CarouselContent>
-      {Images.from({ length: 5 }).map((_, index) => (
-        <CarouselItem key={index}>
-          <div className="p-1">
+    <Carousel className="w-auto max-w-xs">
+      <CarouselContent>
+        {images.map((image, index) => (
+          <CarouselItem key={index}>
             <Card>
               <CardContent className="flex aspect-square items-center justify-center p-6">
-                <img src={_.src} alt="Portrait of Kail Stefanatos" />
+                <img src={image.src} alt="slideshow image" />
               </CardContent>
             </Card>
-          </div>
-        </CarouselItem>
-      ))}
-    </CarouselContent>
-    <CarouselPrevious />
-    <CarouselNext />
-  </Carousel> 
-  )
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <div className='hidden'>
+        <CarouselPrevious />
+        <CarouselNext />
+      </div>
+
+
+    </Carousel>
+  );
 }
-
-// {Images.map(image => (
-//   <CarouselItem key={image.id}>
-//     <CardContent>
-//       <img
-//         src={image.src}
-//         alt={image.alt}
-//       />
-//     </CardContent>
-//   </CarouselItem>
-// ))}
-
-
