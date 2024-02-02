@@ -24,24 +24,12 @@ export default function Services() {
                 <h2 className='text-center mb-4 items-center text-3xl bg-sky-900 text-white p-5 font-bold'>
                     Services
                 </h2>
-                {/* <div>
-                    <img
-                        src={CleaningBeforeAfter.src}
-                        style={{
-                            aspectRatio: "600/600",
-                            objectFit: "cover",
-                        }}
-                        width="600"
-                        height="600"
-                    ></img>
-                    <p></p>
-                </div> */}
-                <div className='flex flex-col text-center'>
-                    <h3>Cleaning</h3>
-                    <h3>re Bedding & re Pointing</h3>
-                    <h3>Valley Replacement</h3>
-                    <h3>Maintainance</h3>
-                    <h3>Full restorations</h3>
+                <div className='flex lg:flex-row flex-col text-center justify-evenly'>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white' ><a href='/Services/Cleaning'>Cleaning</a></h3>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/reBeddingrePointing'>re Bedding & re Pointing</a></h3>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/ValleyReplacements'>Valley Replacement</a></h3>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/Maintainance'>Maintainance</a></h3>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/FullRestorations'>Full restorations</a></h3>
                 </div>
 
             </div>
@@ -51,7 +39,7 @@ export default function Services() {
 
 
     // <Tabs className="w-full h-auto bg-sky-100">
-    //     <TabsList className="flex flex-col bg-sky-900 text-white m-5 p-10">
+    //     <TabsList className="flex flex-col bg-sky-900 hover:text-white m-5 p-10">
     //         <TabsTrigger className="py-2 px-4 rounded-md mb-2" value="tab1">
     //             <span className='text-xl'>Cleaning</span>
     //         </TabsTrigger>

@@ -9,7 +9,6 @@ function LandingPage() {
     return (
         <>
             <div className='flex xl:flex-row flex-col'>
-
                 <div className='flex flex-col items-center justify-center xl:w-2/3 '>
                     <p className='p-5 text-center font-bold xl:text-3xl xs:text-sm'>
                         Call:
@@ -20,7 +19,7 @@ function LandingPage() {
                         Mail to:
                         kailstefanatos@gmail.com
                     </p>
-                    <p className='p-10 text-center'>
+                    <p className='p-5 text-center'>
                         Renowned Roof Restorations by Kail Stefanatos is a small independent Perth based business
                         focused on restoring roofs to their full potential.
                         Whilst giving friendly, prompt and punctual customer service, we will find the solution

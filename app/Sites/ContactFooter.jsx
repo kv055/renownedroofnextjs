@@ -17,7 +17,7 @@ function Contact() {
             Western Australia<br/><br/>
             Kail Stefanatos<br/>
             Phone: +61-423-900464<br/>
-            Email: kail@renownedroofrestorations.com<br/>
+            Email: kailstefanatos@gmail.com<br/>
           </p>
         </div>
 
