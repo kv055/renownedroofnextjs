@@ -1,7 +1,10 @@
-import { Inter } from "next/font/google";
+import { Libre_Baskerville } from "next/font/google";
 import "./globals.css";
 import Header from "./Sites/NavigationHeader";
-const inter = Inter({ subsets: ["latin"] });
+const LB = Libre_Baskerville({ 
+  subsets: ["latin"],
+  weight: '400'
+});
 
 export const metadata = {
   title: "Renowned Roof Restorations",
@@ -12,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <Header /> */}
-      <body className={inter.className}>{children}</body>
+      <body className={LB.className}>{children}</body>
     </html>
   );
 }
