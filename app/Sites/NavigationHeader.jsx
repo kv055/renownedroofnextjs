@@ -5,18 +5,17 @@ function Header() {
   return (
     <div className='flex xl:flex-row flex-col  bg-sky-100 xl:justify-between xl:items-center xl:p-4 md:p-1'>
       {/* Left Section */}
-      <div className='flex xl:flex-row flex-col'>
-        <img src={Logo.src} alt="renown-roofing-logo" className='mr-2 xl:w-1/4 xl:h-2/4' />
+      <div className='flex xl:flex-row flex-col items-center'>
+        <img src={Logo.src} alt="renown-roofing-logo" className='xl:w-1/4 xl:h-2/4 w-2/6 h-3/6'  />
         <h1 className='font-bold xl:text-5xl text-xl'>Renowned Roof Restorations</h1>
       </div>
-
       {/* Right Section */}
-      <ul className='flex xl:flex-row flex-col xl:items-end items-center md:mt-0'> {/* Add margin-top for mobile */}
-        <li className='flex m-5'>Home</li>
-        <li className='flex m-5'>Services</li>
-        <li className='flex m-5'>About</li>
-        <li className='flex m-5'>Contact</li>
-      </ul>
+      {/* <ul className='flex xl:flex-row flex-col xl:items-end items-center md:mt-0'>
+        <li className='flex xl:m-5 m-2'>Home</li>
+        <li className='flex xl:m-5 m-2'>Services</li>
+        <li className='flex xl:m-5 m-2'>About</li>
+        <li className='flex xl:m-5 m-2'>Contact</li>
+      </ul> */}
     </div>
   );
 }
