@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-sitemap-local": "next-sitemap"
   },
   "dependencies": {
     "@radix-ui/react-label": "^2.0.2",
@@ -18,6 +19,7 @@
     "embla-carousel-react": "8.0.0-rc21",
     "lucide-react": "^0.317.0",
     "next": "14.1.0",
+    "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.8",
     "react": "^18",
     "react-dom": "^18",

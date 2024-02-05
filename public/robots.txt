@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.renownedroofrestorations.com.au
+
+# Sitemaps
+Sitemap: https://www.renownedroofrestorations.com.au/sitemap.xml
