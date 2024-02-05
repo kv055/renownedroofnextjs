@@ -27,8 +27,9 @@ export default function Cleaning() {
                     Full Restorations
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex justify-center'>
+                    <div className='flex flex-col items-center justify-center'>
                         <Slider />
+                        <p>Slide to see the transformation</p>
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Full restoration is a combination of all the other services. Bringing your roof back to its full potential regarding both performance and aesthetics. It is also a great alternative to a full re-roof as it is a fraction of the cost and often is all that is necessary to get your roof looking and operating to its highest capacity. Further more, by bundling all services together its saves you money on each part of the operation because all parts can be done at once, giving you the best deal possible We first change all broken tiles and seal any gaps to make sure the house is watertight. After that we give it a comprehensive pressure clean before re-bed and pointing the roof. Valley replacement can also be part of the process but as valleys can hold there integrity for very long periods, sometimes it is not necessary.

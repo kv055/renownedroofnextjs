@@ -29,6 +29,7 @@ export default function Cleaning() {
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
                     <div className='flex justify-center'>
                         <Slider />
+                        <p>Slide to see the transformation</p>
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Roof tiles are directly exposed to Perths harsh weather conditions, from blisteringly hot summer days to torrential storms and extreme winds. This can make wear and tear on your roof happen much more rapidly. Even the smallest cracks can soon develop into a gaping hole, allowing water to flow straight into your home.

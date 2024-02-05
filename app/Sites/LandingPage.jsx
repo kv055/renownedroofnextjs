@@ -33,8 +33,9 @@ function LandingPage() {
                 </div> */}
 
 
-                <div className='flex items-center justify-center'>
+                <div className='flex flex-col items-center justify-center'>
                     <Slideshow/>
+                    <p className='m-5 font-semibold text-lg'>Slide to see some transformations</p>
                 </div>
 
 

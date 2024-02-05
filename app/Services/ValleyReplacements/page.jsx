@@ -26,8 +26,9 @@ export default function Cleaning() {
                     Valley Replacement
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex justify-center'>
+                    <div className='flex flex-col items-center justify-center'>
                         <Slider />
+                        <p>Slide to see the transformation</p>
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Roof valleys are a common cause of a leaking roof. We replace old and rusted valley irons with new, strong and durable ones ensuring decades of security and protection. they are available in any length and we can customise the the angles to fit your roof.

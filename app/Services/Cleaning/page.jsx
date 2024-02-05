@@ -18,6 +18,7 @@ export default function Cleaning() {
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
                     <div className='flex justify-center'>
                         <Slider/>
+                        <p>Before and After</p>
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Elevate the longevity and aesthetic appeal of your property with our professional roof cleaning service.
