@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* <Header /> */}
+      <meta name="ahrefs-site-verification" content="33651fb8e8ae37b5ab3e448023993b4e0613a53f16acacb34057ed0ce7bb8a67"></meta>
       <body className={LB.className}>{children}</body>
     </html>
   );
