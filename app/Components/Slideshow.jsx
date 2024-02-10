@@ -16,22 +16,16 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
-import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
-import ValleyBefore from '../../public/ServicesValleyBefore.jpeg'
-import ValleyAfter from '../../public/ServicesValleyAfter.jpeg'
-import ReBeddingRePointingBefore from '../../public/ServicesReBeddingRePointingBefore.jpeg'
-import ReBeddingRePointingAfter from '../../public/ServicesReBeddingRePointingAfter.jpeg'
-import FullRestorationBefore from '../../public/ServicesFullRestorationsBefore.jpeg'
-import FullRestorationAfter from '../../public/ServicesFullRestorationsAfter.jpeg'
+import CleaningBeforeAfter from '../../public/Group4WebsiteSliderPics.jpg'
+import ValleyBeforeAfter from '../../public/Group13WebsiteSliderPics.jpg'
+import ReBeddingRePointingBeforeAfter from '../../public/Group2WebsiteSliderPics.jpg'
+import FullRestorationBeforeAfter from '../../public/Group6WebsiteSliderPics.jpg'
 
 const images = [
   CleaningBeforeAfter,
-  ValleyBefore,
-  ValleyAfter,
-  ReBeddingRePointingBefore,
-  ReBeddingRePointingAfter,
-  FullRestorationBefore,
-  FullRestorationAfter
+  ValleyBeforeAfter,
+  ReBeddingRePointingBeforeAfter,
+  FullRestorationBeforeAfter
 ];
 
 export default function Slideshow() {

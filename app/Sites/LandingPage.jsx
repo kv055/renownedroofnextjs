@@ -1,8 +1,6 @@
 import React from 'react';
 import Slideshow from '../Components/Slideshow';
 import ContactForm from '../Components/ContactForm';
-import Portrait from '../../public/PortraitSquare.jpg';
-import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
 import Arrow from '../../public/Vectorarrow.svg'
 
 function LandingPage() {
