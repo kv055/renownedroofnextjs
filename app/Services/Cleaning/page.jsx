@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from './Slider'
 import Header from '../../Sites/NavigationHeader'
+import Arrow from '../../../public/Vectorarrow.svg'
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/Pdusrw0MX1f
@@ -13,12 +14,17 @@ export default function Cleaning() {
             <div className='xl:px-36 xl:py-10 md:px-2 md:py-2'>
 
                 <h3 className='text-center mb-4 items-center text-3xl bg-sky-900 text-white p-5 font-bold'>
-                    Cleaning
+                   High Pressure Cleaning
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex justify-center'>
+                    <div className='flex flex-col *:justify-center items-center'>
+                        <div className='flex flex-row items-center justify-evenly'>
+                            <img src={Arrow.src} className='w-10 h-10 m-3'></img>
+                            <p className='font-semibold text-2xl m-3'>Swipe</p>
+                            {/* <img src={Arrow.src} className='w-10 h-10'></img> */}
+                        </div>
                         <Slider/>
-                        <p>Before and After</p>
+                        {/* <p>Before and After</p> */}
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Elevate the longevity and aesthetic appeal of your property with our professional roof cleaning service.

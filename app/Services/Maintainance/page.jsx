@@ -9,6 +9,7 @@ import ReBeddingRePointingBefore from '../../../public/ServicesReBeddingRePointi
 import ReBeddingRePointingAfter from '../../../public/ServicesReBeddingRePointingAfter.jpeg'
 import FullRestorationBefore from '../../../public/ServicesFullRestorationsBefore.jpeg'
 import FullRestorationAfter from '../../../public/ServicesFullRestorationsAfter.jpeg'
+import Arrow from '../../../public/Vectorarrow.svg'
 // import from '../../../public/Services'
 /**
  * v0 by Vercel.
@@ -27,9 +28,14 @@ export default function Cleaning() {
                     Maintainance
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex justify-center'>
-                        <Slider />
-                        <p>Slide to see the transformation</p>
+                    <div className='flex flex-col *:justify-center items-center'>
+                        <div className='flex flex-row items-center justify-evenly'>
+                            <img src={Arrow.src} className='w-10 h-10 m-3'></img>
+                            <p className='font-semibold text-2xl m-3'>Swipe</p>
+                            {/* <img src={Arrow.src} className='w-10 h-10'></img> */}
+                        </div>
+                        <Slider/>
+                        {/* <p>Before and After</p> */}
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Roof tiles are directly exposed to Perths harsh weather conditions, from blisteringly hot summer days to torrential storms and extreme winds. This can make wear and tear on your roof happen much more rapidly. Even the smallest cracks can soon develop into a gaping hole, allowing water to flow straight into your home.

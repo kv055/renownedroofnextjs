@@ -8,6 +8,7 @@ import ReBeddingRePointingBefore from '../../../public/ServicesReBeddingRePointi
 import ReBeddingRePointingAfter from '../../../public/ServicesReBeddingRePointingAfter.jpeg'
 import FullRestorationBefore from '../../../public/ServicesFullRestorationsBefore.jpeg'
 import FullRestorationAfter from '../../../public/ServicesFullRestorationsAfter.jpeg'
+import Arrow from '../../../public/Vectorarrow.svg'
 // import from '../../../public/Services'
 /**
  * v0 by Vercel.
@@ -26,9 +27,14 @@ export default function Cleaning() {
                     Valley Replacement
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex flex-col items-center justify-center'>
-                        <Slider />
-                        <p>Slide to see the transformation</p>
+                    <div className='flex flex-col *:justify-center items-center'>
+                        <div className='flex flex-row items-center justify-evenly'>
+                            <img src={Arrow.src} className='w-10 h-10 m-3'></img>
+                            <p className='font-semibold text-2xl m-3'>Swipe</p>
+                            {/* <img src={Arrow.src} className='w-10 h-10'></img> */}
+                        </div>
+                        <Slider/>
+                        {/* <p>Before and After</p> */}
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Roof valleys are a common cause of a leaking roof. We replace old and rusted valley irons with new, strong and durable ones ensuring decades of security and protection. they are available in any length and we can customise the the angles to fit your roof.

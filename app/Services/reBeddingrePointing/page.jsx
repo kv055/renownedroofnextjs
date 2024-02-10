@@ -9,6 +9,7 @@ import ReBeddingRePointingBefore from '../../../public/ServicesReBeddingRePointi
 import ReBeddingRePointingAfter from '../../../public/ServicesReBeddingRePointingAfter.jpeg'
 import FullRestorationBefore from '../../../public/ServicesFullRestorationsBefore.jpeg'
 import FullRestorationAfter from '../../../public/ServicesFullRestorationsAfter.jpeg'
+import Arrow from '../../../public/Vectorarrow.svg'
 // import from '../../../public/Services'
 /**
  * v0 by Vercel.
@@ -27,9 +28,14 @@ export default function Cleaning() {
                     re Bedding & re Pointing
                 </h3>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex flex-col items-center justify-center'>
-                        <Slider />
-                        <p>Slide to see the transformation</p>
+                    <div className='flex flex-col *:justify-center items-center'>
+                        <div className='flex flex-row items-center justify-evenly'>
+                            <img src={Arrow.src} className='w-10 h-10 m-3'></img>
+                            <p className='font-semibold text-2xl m-3'>Swipe</p>
+                            {/* <img src={Arrow.src} className='w-10 h-10'></img> */}
+                        </div>
+                        <Slider/>
+                        {/* <p>Before and After</p> */}
                     </div>
                     <p className='text-center justify-end px-10 py-5 text-sky-900'>
                         Over the lifetime of any tiled roof, the pointing and cement mortar will eventually start to crack away from the tiles and ridges. Exposure to the elements drastically accelerates this process and once cracking has occured that process speeds up further still, turning small cracks into leaking holes in your roof. If caught early small cracks can be rectified by repointing alone. Pointing is a strong acrylic, adhesive solution that seals and strengthens the bond between tile, mortar and ridge and also leaves your roof looking great. if the cracks have become too big or the mortar has lost its integrity, the rebedding procedure is necessary before pointing. This involves removing all the old cement mortar from the roof and replacing it with a new batch. We then point over the top of the new cement bedding. This process ensures the longevity and structural integrity for many years to come.

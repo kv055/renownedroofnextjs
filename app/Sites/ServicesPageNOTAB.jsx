@@ -25,7 +25,7 @@ export default function Services() {
                     Services
                 </h2>
                 <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <h3 className='p-5 hover:bg-sky-900 hover:text-white' ><a href='/Services/Cleaning'>Cleaning</a></h3>
+                    <h3 className='p-5 hover:bg-sky-900 hover:text-white' ><a href='/Services/Cleaning'>High Pressure Cleaning</a></h3>
                     <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/reBeddingrePointing'>re Bedding & re Pointing</a></h3>
                     <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/ValleyReplacements'>Valley Replacement</a></h3>
                     <h3 className='p-5 hover:bg-sky-900 hover:text-white'><a href='/Services/Maintainance'>Maintainance</a></h3>

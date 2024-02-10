@@ -3,6 +3,7 @@ import Slideshow from '../Components/Slideshow';
 import ContactForm from '../Components/ContactForm';
 import Portrait from '../../public/PortraitSquare.jpg';
 import CleaningBeforeAfter from '../../public/ServicesCleaning.jpeg'
+import Arrow from '../../public/Vectorarrow.svg'
 
 function LandingPage() {
 
@@ -33,9 +34,16 @@ function LandingPage() {
                 </div> */}
 
 
-                <div className='flex flex-col items-center justify-center'>
-                    <Slideshow/>
-                    <p className='m-5 font-semibold text-lg'>Slide to see some transformations</p>
+                <div className='flex flex-col items-center'>
+                    <div className='flex flex-row items-center justify-evenly'>
+                        <img src={Arrow.src} className='w-10 h-10 m-3'></img>
+                        <p className='font-semibold text-2xl m-3'>Swipe</p>
+                        {/* <img src={Arrow.src} className='w-10 h-10'></img> */}
+                    </div>
+                    {/* <div className='flex'> */}
+                        <Slideshow/>
+                    {/* </div> */}
+                    
                 </div>
 
 
