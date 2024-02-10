@@ -17,9 +17,13 @@ import {
 } from "@/components/ui/carousel"
 
 import CleaningBeforeAfter from '../../../public/ServicesCleaning.jpeg'
+import CleaningBeforeAfter2 from '../../../public/Group8WebsiteSliderPics.jpg'
+import CleaningBeforeAfter3 from '../../../public/Group9WebsiteSliderPics.jpg'
 
 const images = [
-  CleaningBeforeAfter
+  CleaningBeforeAfter,
+  CleaningBeforeAfter2,
+  CleaningBeforeAfter3
 ];
 
 export default function Slider() {

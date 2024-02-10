@@ -16,10 +16,18 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import RePeddingRePointing1 from '../../../public/Group10WebsiteSliderPics.jpg'
+import RePeddingRePointing2 from '../../../public/Group11WebsiteSliderPics.jpg'
+import RePeddingRePointing3 from '../../../public/Group12WebsiteSliderPics.jpg'
+import RePeddingRePointing4 from '../../../public/Group13WebsiteSliderPics.jpg' 
 import ReBeddingRePointingBefore from '../../../public/ServicesReBeddingRePointingBefore.jpeg'
 import ReBeddingRePointingAfter from '../../../public/ServicesReBeddingRePointingAfter.jpeg'
 
 const images = [
+    RePeddingRePointing1,
+    RePeddingRePointing2,
+    RePeddingRePointing3,
+    RePeddingRePointing4,
     ReBeddingRePointingBefore,
     ReBeddingRePointingAfter
 ];

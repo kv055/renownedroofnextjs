@@ -27,8 +27,8 @@ export default function Cleaning() {
                 <h3 className='text-center mb-4 items-center text-3xl bg-sky-900 text-white p-5 font-bold'>
                     Maintainance
                 </h3>
-                <div className='flex lg:flex-row flex-col text-center justify-evenly'>
-                    <div className='flex flex-col *:justify-center items-center'>
+                <div className='flex lg:flex-row flex-col text-center justify-evenly items-center'>
+                    <div className='basis-1/3 flex flex-col *:justify-center items-center'>
                         <div className='flex flex-row items-center justify-evenly'>
                             <img src={Arrow.src} className='w-10 h-10 m-3'></img>
                             <p className='font-semibold text-2xl m-3'>Swipe</p>
@@ -37,7 +37,7 @@ export default function Cleaning() {
                         <Slider/>
                         {/* <p>Before and After</p> */}
                     </div>
-                    <p className='text-center justify-end px-10 py-5 text-sky-900'>
+                    <p className='basis-1/3 text-center justify-end px-10 py-5 text-sky-900'>
                         Roof tiles are directly exposed to Perths harsh weather conditions, from blisteringly hot summer days to torrential storms and extreme winds. This can make wear and tear on your roof happen much more rapidly. Even the smallest cracks can soon develop into a gaping hole, allowing water to flow straight into your home.
                         Our leak detection experts will source and seal any leaks and damages, leaving your home once again secure and impregnable.
 

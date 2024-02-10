@@ -16,12 +16,24 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import FullResto1 from '../../../public/Group1WebsiteSliderPics.jpg'
+import FullResto2 from '../../../public/Group2WebsiteSliderPics.jpg'
+import FullResto3 from '../../../public/Group3WebsiteSliderPics.jpg'
+import FullResto4 from '../../../public/Group5WebsiteSliderPics.jpg'
+import FullResto5 from '../../../public/Group6WebsiteSliderPics.jpg'
+import FullResto6 from '../../../public/Group7WebsiteSliderPics.jpg'
 import FullRestorationBefore from '../../../public/ServicesFullRestorationsBefore.jpeg'
 import FullRestorationAfter from '../../../public/ServicesFullRestorationsAfter.jpeg'
 
 const images = [
     FullRestorationBefore,
-    FullRestorationAfter
+    FullRestorationAfter,
+    FullResto1,
+    FullResto2,
+    FullResto3,
+    FullResto4,
+    FullResto5,
+    FullResto6,
 ];
 
 export default function Slider() {

@@ -5,10 +5,10 @@ function Header() {
   return (
 
       <div className='flex xl:flex-row flex-col justify-center xl:justify-start items-center bg-sky-100'>
-        <a href='/' className='flex justify-center m-3 ml-12'>
+        <a href='/' className='flex justify-center m-3 ml-10'>
           <img src={Logo.src} alt="renown-roofing-logo" className='xl:w-1/4 xl:h-2/4 w-2/6 h-3/6'  />
         </a>
-        <h1 className='font-bold xl:text-5xl text-xl m-2'>Renowned Roof Restorations</h1>
+        <h1 className='font-bold xl:text-5xl text-xl m-2 text-sky-900'>Renowned Roof Restorations</h1>
       </div>
 
   );

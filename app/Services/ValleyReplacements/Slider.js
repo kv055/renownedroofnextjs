@@ -16,11 +16,17 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 
+import Valley1 from '../../../public/Group4WebsiteSliderPics.jpg'
+import Valley2 from '../../../public/Group5WebsiteSliderPics2.jpg'
+import Valley3 from '../../../public/Group7WebsiteSliderPics3.jpg'
 import ValleyBefore from '../../../public/ServicesValleyBefore.jpeg'
 import ValleyAfter from '../../../public/ServicesValleyAfter.jpeg'
 
 
 const images = [
+    Valley1,
+    Valley2,
+    Valley3,
     ValleyBefore,
     ValleyAfter
 ];
