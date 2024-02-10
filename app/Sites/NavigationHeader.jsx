@@ -3,22 +3,14 @@ import Logo from '../../public/RenownedLOGO.svg';
 
 function Header() {
   return (
-    <div className='flex xl:flex-row flex-col  bg-sky-100 xl:justify-between xl:items-center xl:p-4 md:p-1'>
-      {/* Left Section */}
-      <div className='flex xl:flex-row flex-col items-center'>
-      <a href='/'>
-        <img src={Logo.src} alt="renown-roofing-logo" className='xl:w-1/4 xl:h-2/4 w-2/6 h-3/6'  />
-      </a>
-        <h1 className='font-bold xl:text-5xl text-xl'>Renowned Roof Restorations</h1>
+
+      <div className='flex xl:flex-row flex-col justify-center xl:justify-start items-center bg-sky-100'>
+        <a href='/' className='flex justify-center m-3 ml-12'>
+          <img src={Logo.src} alt="renown-roofing-logo" className='xl:w-1/4 xl:h-2/4 w-2/6 h-3/6'  />
+        </a>
+        <h1 className='font-bold xl:text-5xl text-xl m-2'>Renowned Roof Restorations</h1>
       </div>
-      {/* Right Section */}
-      {/* <ul className='flex xl:flex-row flex-col xl:items-end items-center md:mt-0'>
-        <li className='flex xl:m-5 m-2'>Home</li>
-        <li className='flex xl:m-5 m-2'>Services</li>
-        <li className='flex xl:m-5 m-2'>About</li>
-        <li className='flex xl:m-5 m-2'>Contact</li>
-      </ul> */}
-    </div>
+
   );
 }
 
