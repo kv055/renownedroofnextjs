@@ -7,8 +7,8 @@ function LandingPage() {
 
     return (
         <>
-            <div className='flex xl:flex-row flex-col'>
-                <div className='flex flex-col items-center justify-center xl:w-2/3 '>
+            <div className='flex xl:flex-row flex-col justify-evenly'>
+                <div className='flex flex-col items-center justify-center xl:w-2/3 xl:p-10'>
                     <p className='p-5 text-center font-bold xl:text-3xl xs:text-sm'>
                         Call:
                         +61-423-900464

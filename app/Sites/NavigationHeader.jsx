@@ -6,7 +6,9 @@ function Header() {
     <div className='flex xl:flex-row flex-col  bg-sky-100 xl:justify-between xl:items-center xl:p-4 md:p-1'>
       {/* Left Section */}
       <div className='flex xl:flex-row flex-col items-center'>
+      <a href='/'>
         <img src={Logo.src} alt="renown-roofing-logo" className='xl:w-1/4 xl:h-2/4 w-2/6 h-3/6'  />
+      </a>
         <h1 className='font-bold xl:text-5xl text-xl'>Renowned Roof Restorations</h1>
       </div>
       {/* Right Section */}

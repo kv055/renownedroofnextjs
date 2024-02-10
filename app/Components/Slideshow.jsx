@@ -36,7 +36,7 @@ export default function Slideshow() {
         {images.map((image, index) => (
           <CarouselItem key={index}>
             <Card>
-              <CardContent className="flex aspect-square items-center justify-center p-6">
+              <CardContent className="flex aspect-square items-center justify-center p-2">
                 <img src={image.src} alt="slideshow image" />
               </CardContent>
             </Card>
